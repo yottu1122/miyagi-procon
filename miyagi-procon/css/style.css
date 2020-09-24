@@ -1,0 +1,1438 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/*共通---------*/
+
+html {
+    width: 100%;
+    font-size: 65.2%;
+    letter-spacing: 0.01em;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro' '源ノ角ゴシック JP';
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.orange {
+    color: #E77722;
+}
+
+.yellow {
+    color: yellow;
+    font-size: 2rem;
+    padding-right: 75px;
+}
+
+.section-title {
+padding-top: 2%;
+font-size: 4rem;
+margin: 0;
+}
+
+
+.section-title1 {
+    padding-top: 2%;
+    font-size: 4rem;
+    margin: 0;
+    }
+
+.wrpper {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    display:block;
+    width:65.5px;
+    height:10px;
+    background-color: rgb(78, 191, 243);
+    position:absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ }
+
+/*--------共通終*/
+
+/*ヘッダー------*/
+.header-wrapper {
+    height: 6.3rem;
+    /* display: flex; */
+    justify-content: center;
+}
+
+
+.logo img {
+    width: 170px;
+    height: 78px;
+    object-fit: scale-down;
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.logo1 img {
+    width: 170px;
+    height: 78px;
+    object-fit: scale-down;
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.tw-img {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 10px;
+    left: 75%;
+}
+
+.fb-img {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-right: 9%;
+    margin-top: 10px;
+    left: 80%;
+}
+
+
+.sns-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.sns-icon2 {
+    display: none;
+}
+
+
+.pohotowrap {
+width: 100%;
+height: 640px;
+background-color: black;
+}
+.pohotowrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    background-image: url(../img/main-background3.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.5;
+}
+
+section h1 {
+    font-family:  '源ノ角ゴシック';
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #000000;
+  }
+
+section h2 {
+    font-family: '源ノ角ゴシック';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #e26000;
+  }
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 66px;
+  height: 10px;
+  margin: 15px auto 0 auto;
+  background-color: #4dbef3;
+
+  }
+
+  .gloval-navi a{
+      color: #000000;
+  }
+
+
+.pohotowrap img{
+    position: relative;
+    top: 170px;
+    left: 620px;
+    width: 670px;
+    height: 210px;
+    z-index: 100;
+    content:'';
+}
+
+/*navimenu------*/
+.header-top {
+    height: 75px;
+}
+
+
+.gloval-navi{
+    line-height: 0;
+    /* display: flex; */
+    align-items: center;
+    /* max-width: 800px;
+    width: 100%; */
+}
+
+
+.gloval-navi ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.gloval-navi li {
+    font-size: 1.6rem;
+    margin-left: 40px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro';
+    padding-bottom: 13px;
+}
+
+
+.gloval-navi1{
+    line-height: 0;
+    /* display: flex; */
+    align-items: center;
+    /* max-width: 800px;
+    width: 100%; */
+}
+
+
+.gloval-navi1 ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.gloval-navi1 li {
+    font-size: 1.6rem;
+    margin-left: 40px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro';
+    padding-bottom: 13px;
+}
+
+
+.entry {
+    width: 200px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right,#fd654f, #fc664e, #fb6d45,#f8773d,#f38b29);
+}
+.big {
+    font-size: 2rem;
+}
+
+
+.entry a {
+    padding-top: 5px;
+    display: block;
+
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.entry p {
+    color: #ffffff;
+
+}
+
+.entry1 {
+    width: 200px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right,#fd654f, #fc664e, #fb6d45,#f8773d,#f38b29);
+}
+.big {
+    font-size: 2rem;
+}
+
+
+.entry1 a {
+    padding-top: 5px;
+    display: block;
+
+    font-size: 2rem;
+    color: #ffffff;
+}
+.entry1 p {
+    color: #ffffff;
+
+}
+
+
+.entry2 {
+    width: 200px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right,#fd654f, #fc664e, #fb6d45,#f8773d,#f38b29);
+}
+.big {
+    font-size: 2rem;
+}
+
+
+.entry2 a {
+    padding-top: 5px;
+    display: block;
+
+    font-size: 2rem;
+    color: #ffffff;
+}
+.entry2 p {
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+.big-title{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.current_year{
+    font-size: 10px;
+    text-align: right;
+    margin-right: 50px;
+    font-weight :bold ;
+    text-align: right;
+
+}
+
+.submission{
+    font-size: 22px;
+    font-weight :bold ;
+    text-align: center;
+}
+
+
+.subtitle {
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    top: 170px;
+    left: 635px;
+    z-index: 1;
+    width: 50%;
+}
+
+
+.top-news {
+    height: 8rem;
+    background-color: rgb(78, 191, 243);
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 1.3;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    /* margin-top: 5px; */
+}
+
+.title-txt {
+    position: absolute;
+    margin-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 1;
+}
+/*------ヘッダー終*/
+
+/*main----------*/
+
+
+
+/*about*/
+/* .about{
+    position: relative;
+} */
+
+.container{
+    background-image: url(../img/about-txt.png); 
+    background-size: 34vw;
+    background-repeat: no-repeat;
+    background-position:top right;
+
+}
+
+.txt-titel{
+    font-size: 3rem;
+    color: #e56b19;
+    margin: 0;
+}
+
+.txt{
+    margin: 0;
+}
+
+.about1{
+    display: flex;
+
+}
+
+#mobile-text{
+    display: none;
+}
+
+/* .about-text::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -654px;
+    width: 800px;
+
+
+    background-size: contain;
+    background-position: right;
+} */
+
+.about-img{
+    position: absolute;
+    right: 0;
+    bottom: -654px;
+    width: 800px;
+    height: 800px;
+}
+
+.about-text {
+    width: 57%;
+    height: 600px;
+    font-family: '源ノ角ゴシック JP';
+    font-weight: bold;
+    font-size: 1.33vw;
+    margin: 50px auto 0 auto;
+}
+
+.about-logo {
+    width: 192px;
+    height: 196px;
+    display: block;
+    margin: 160px auto 73px auto;
+}
+
+.start-entry {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.application-requirements {
+    width: 430px;
+    height: 105px;
+    border:4.43px solid rgb(78, 191, 243);
+    box-shadow: 10px 10px 0px 0 #159ad8;
+}
+
+.application-requirements a {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3rem;
+    color: #159ad8;
+}
+
+.application-requirements img {
+    padding: 0 0 8px 20px;
+}
+
+.examination-flow {
+    width: 430px;
+    height: 105px;
+    margin-left: 29px;
+    border:4.43px solid rgb(78, 191, 243);
+    box-shadow: 10px 10px 0px 0 #159ad8;
+}
+
+.examination-flow a {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3rem;
+    color: #159ad8;
+}
+
+.section-tit1  {
+    height: 80px;
+    background-color:#159ad8;
+}
+
+.section-tit1 h1 {
+    padding-top: 10px;
+    color: #ffe401;
+}
+
+.section-tit2 {
+    height: 50px;
+    background-color: #dff9fb;
+}
+
+.section-tit2 p  {
+    padding-top: 15px;
+    font-family: UDShinGoPro;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.04;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+
+
+.date_notice_box {
+    display: flex;
+    margin-top: 29px;
+    margin-left: 26px;
+    margin-bottom: 18px;
+    align-items: baseline;
+}
+
+.notice_date {
+    width: 92px;
+    height: 15px;
+    font-family: '源ノ角ゴシック';
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: 0.18px;
+    text-align: center;
+    color: #4dbef3;
+    margin-top: 10px;
+  }
+
+.notice {
+    width: 70px;
+    height: 20px;
+    margin-left: 26px;
+    background-color: #e26000;
+    margin-top: 10px;
+}
+
+.notice p  {
+    padding-top: 4px;
+    padding-left: 11px;
+    font-family: '源ノ角ゴシック';
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+.notice_tit  {
+    font-family: '源ノ角ゴシックJP';
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #2c2c2c;
+    margin-left: 25px;
+  }
+
+.info-text{
+    font-size: 17px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.link_box {
+    margin-left: 27px;
+    margin-bottom: 42px;
+}
+
+.text-box {
+    width: 834px;
+    margin-top: 34px;
+    margin-left: 24px;
+}
+
+
+.text-box1 {
+    display: none;
+}
+
+.text-box p  {
+    font-family: '源ノ角ゴシックJP';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: 0.01px;
+    text-align: left;
+    color: #2c2c2c; 
+  }
+
+  .link_box a {
+    display: block;
+    font-family: '源ノ角ゴシック';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #e36816;
+    text-decoration: none;
+    border-bottom: 1px solid #e36816;
+   
+  }
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    height: 400px;
+    background-color: #c8c8c8;
+    margin: 39px auto 60px auto;
+}
+
+.image-box  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: '源ノ角ゴシック';
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #2c2c2c;
+  }
+
+.a {
+    width: 142px;
+    height: 30px;
+    margin-bottom: 8px;
+} 
+
+.b {
+    width: 122px;
+    height: 30px;
+}
+
+.b a{
+    display:inline-block;
+    
+}
+
+
+.examination-flow img {
+    padding: 0 0 8px 20px;
+}
+/*info*/
+.infomation {
+    height: auto;
+    padding-top: 55px;
+    background-color: #f2f2f2;
+}
+
+.infomation-box {
+    display: flex;
+    justify-content: center;
+}
+
+.info-box_ {
+    width: 280px;
+    height: 300px;
+    margin: 34px 13px 34px 13px;
+    border: solid 3px #4dbef3;
+    background-color: #ffffff;
+}
+
+.info_box {
+    width: 280px;
+    height: 300px;
+    margin: 34px 13px 34px 13px;
+    border: solid 3px #4dbef3;
+    background-color: #ffffff;
+}
+
+
+.info-box {
+    width: 280px;
+    height: 300px;
+    margin: 34px 13px 34px 13px;
+    border: solid 3px #4dbef3;
+    background-color: #ffffff;
+
+}
+
+
+
+.info-box1 {
+    width: 900px;
+    height: 800px;
+    /* margin: 34px 13px 34px 13px; */
+    margin: 89px auto 63px auto;
+    border: solid 3px #4dbef3;
+    background-color: #ffffff;
+}
+
+.info_img  {
+    margin: 21px auto 16px auto;
+    width: 240px;
+    height: 134px;
+    background-color: #f7f7f7;
+    position:relative;
+  }
+
+.info_img img  {
+    width: 84px;
+    height: 86px;
+    position:absolute;
+    top:24px;
+    left:78px;
+  }
+
+  .info-img  {
+    margin: 21px auto 16px auto;
+    width: 240px;
+    height: 134px;
+  }
+.date {
+    font-family: '源ノ角ゴシック';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-left:22px;
+    color: #4dbef3;
+}
+
+.date_1 {
+    font-family: '源ノ角ゴシック';
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-left:22px;
+    color: #4dbef3;
+}
+
+
+.comennt p {
+    font-family: '源ノ角ゴシック';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-align: left;
+    color: #636363;
+    text-align: left;
+    margin-left:24px;
+    margin-bottom: 29px;
+    }
+
+
+.info-box_ a {
+    width: 60px;
+    height: 20px;
+    font-family: '源ノ角ゴシック';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    color: #ffffff;
+    background-color: #e26000;
+    text-decoration: none;
+    padding: 5px 6px 3px 7px;
+    margin-left:22px;
+    }
+    
+.info-box a {
+    width: 60px;
+    height: 20px;
+    font-family: '源ノ角ゴシック';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    color: #ffffff;
+    background-color: #e26000;
+    text-decoration: none;
+    padding: 5px 6px 3px 7px;
+    margin-left:22px;
+}
+
+
+.info_box a {
+    width: 60px;
+    height: 20px;
+    font-family: '源ノ角ゴシック';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    color: #ffffff;
+    background-color: #e26000;
+    text-decoration: none;
+    padding: 5px 6px 3px 7px;
+    margin-left:22px;
+}
+
+.read-more {
+    width: 366px;
+    height: 64px;
+    margin: 0 auto;
+    background-color: #159ad8;
+    padding: 24px 0px 22px 74px;
+}
+.read-more a {
+    font-family: '源ノ角ゴシック';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 21px;
+}
+
+
+.read-more img {
+    width: 42px;
+    height: 10px;
+}
+
+
+
+.date-text{
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+
+.more-read a{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+.more-read img{
+    padding-left: 20px;
+}
+
+.itonav-img {
+    width: 98px;
+    height: 34px;
+}
+
+/*info-box中身*/
+
+  .infomation-box2 {
+    display: block;
+    margin-top: 130px;
+  }
+  
+.info-notice{
+    display: flex;
+}
+  
+  .info-box2 {
+      width: 610px;
+      height: 100px;
+      position: relative;
+      border: solid 3px #4dbef3;
+      margin: 0 auto 10px auto;
+      background-color: #ffffff;
+      }
+  
+  /*エントリ－開始・山形*/
+    /* .info-img {
+      width: 160px;
+      height: 90px;
+  
+    }
+   */
+    .start-procon1 a{
+      width: 70px;
+      height: 20px;
+      display:block;
+      padding: 5px 6px  25px 7px;
+      position:absolute;
+      right:53px;
+      bottom:24px;
+      
+    }
+  
+    /* .info-box a {
+      margin-left: 250px;
+      padding: 5px 6px 8px 7px;
+      }
+  
+    .info-box a{
+      margin-left: 250px;
+      padding: 5px 6px 8px 7px;
+      }
+   */
+    .date {
+      margin: 29px 0 0 230px;
+   }
+   .comennt1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-yajirusi{
+    margin-left: 305px;
+    
+}
+
+.comennt1 img{
+    width: 50px;
+  }
+
+  .comennt1 br{
+    display: none;
+  }
+  
+  .yamagata1 a {
+    display: block;
+    width: 100px;
+    height: 20px;
+    padding: 5px 6px 25px 7px;
+    position: absolute;
+    left:198px;
+    bottom:20px
+  
+  }
+  
+  
+  
+  /*石巻*/
+  /* .date_1 {
+    position:absolute;
+    left:210px;
+    bottom:98px;
+  }
+   */
+  /* .info_box p {
+   position:absolute;
+   top:50px;
+   left:200px;
+  }
+   */
+  /* .info_box a {
+    width: 100px;
+    height: 20px;
+    display:block;
+    padding: 5px 6px  25px 7px;
+    position:absolute;
+    right:53px;
+    bottom:24px;
+  }
+  
+   */
+
+
+
+.date {
+    font-family: '源ノ角ゴシック';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-left:22px;
+    color: #4dbef3;
+    
+}
+
+.date2 {
+    font-family: '源ノ角ゴシック';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #4dbef3;
+}
+
+/* .date_1 {
+    font-family: '源ノ角ゴシック';
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    margin-left:22px;
+    color: #4dbef3;
+}
+ */
+
+/* .comennt p {
+    font-family: '源ノ角ゴシック';
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-align: left;
+    color: #636363;
+    text-align: left;
+    margin-left:24px;
+    margin-bottom: 29px;
+    }
+ */
+
+/* 
+.info_box a {
+    width: 60px;
+    height: 20px;
+    font-family: '源ノ角ゴシック';
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    color: #ffffff;
+    background-color: #e26000;
+    text-decoration: none;
+    padding: 5px 6px 3px 7px;
+    margin-left:22px;
+} */
+
+.read-more {
+    width: 366px;
+    height: 64px;
+    margin: 0 auto;
+    background-color: #159ad8;
+    padding: 24px 0px 22px 74px;
+}
+.read-more a {
+    font-family: '源ノ角ゴシック';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 21px;
+}
+
+
+.read-more img {
+    width: 42px;
+    height: 10px;
+}
+
+
+
+.date-text{
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+
+.more-read a{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+.more-read img{
+    padding-left: 20px;
+}
+
+.itonav-img {
+    width: 98px;
+    height: 34px;
+}
+
+.start-entry1{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.application-requirements1{
+    width: 340px;
+    height: 80px;
+    border: 4.43px solid rgb(78, 191, 243);
+    box-shadow: 10px 10px 0px 0 #159ad8;
+}
+
+.application-requirements1 img {
+    padding: 0 0 8px 20px;
+    width: 80px;
+}
+
+.application-requirements1 a {
+    display: block;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 2.5rem;
+    color: #159ad8;
+}
+
+
+.examination-flow1{
+    width: 340px;
+    height: 80px;
+    margin-left: 28px;
+    border: 4.43px solid rgb(78, 191, 243);
+    box-shadow: 10px 10px 0px 0 #159ad8;
+}
+
+.examination-flow1 img {
+    padding: 0 0 8px 20px;
+    width: 80px;
+}
+
+.examination-flow1 a {
+    display: block;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 2.5rem;
+    color: #159ad8;
+}
+
+
+/*sponsor*/
+
+.logo2 img {
+    width: 160px;
+    height: 51px;
+    display: block;
+    margin: 30px auto;
+}
+
+
+
+
+.sponsor-box {
+    width: 420px;
+    height: 160px;
+    /* margin: 14px; */
+    font-size: 2rem;
+    font-family: '源ノ角ゴシック JP';
+    font-weight: bold;
+    border: 1px solid #c3c3c3;
+}
+
+.sponsors-wrapper {
+    display: grid;
+    grid-column-gap:26px;
+    grid-row-gap: 26px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    
+    gap: 10px;
+}
+
+
+.sponsor-box1 {
+
+    margin-top: 44px;
+    }
+
+.sponsor-box3 {
+        margin-bottom: 56px;
+    }
+
+.sponsor-box2 {
+    margin-top: 44px;
+
+    }
+.sponsor-box4 {
+        margin-bottom: 56px;
+
+        }
+    
+
+
+
+.sponsor-box p {
+    position: relative;
+    top: 60px;
+    left: 130px;
+
+
+}
+.sponsor-list-wrapper {
+    padding-top: 28px;
+    background-color: #f2f2f2;
+}
+.sponsor-list {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsor-list img {
+    margin: 20px 50px 0px 0px;
+}
+
+
+footer {
+    height: auto;
+    background-color: #f2f2f2;
+}
+
+.footer-list {
+    width: 900px;
+    margin: 0 auto;
+}
+
+dt  {
+    float:left;
+    clear: left;
+    font-family: '源ノ角ゴシック';
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    color: #444444;
+  }
+
+dt+dd {
+  width: 900px;
+  border-bottom: solid 2px #c3c3c3;
+}
+
+.footer-logo {
+    padding-top: 30px;
+}
+
+
+
+/*プロコンロゴ*/
+
+.footer-list img {
+    object-fit: fill;
+}
+.sponsored_1+dd {
+    border-top: solid 2px #c3c3c3;
+}
+
+.sponsored_2 {
+    padding-top: 25px;
+}
+
+.sponsored_3 {
+    padding-top: 10px;
+}
+
+.sponsored-img {
+    display: flex;
+    justify-content: center;
+}
+
+dt {
+    padding:25px 51px 23px 46px;
+  }
+
+  dd {
+    padding: 0 0 23px 0;
+    font-size: 18px;
+  }
+
+.cosponsor {
+    padding: 0;
+}
+
+.procon-logo{
+    width: 140px;
+    height: 51px;
+    display: block;
+    object-fit: fill;
+    margin: 30px auto 21px auto;
+}
+
+  /*共催img*/
+
+  .sendai_technicalcollege img {
+    width: 201px;
+    height: 39px;
+    margin: 19px 52px 0 52px;
+  }
+
+  .PCN_sendai img{
+    width: 130px;
+    height: 37px;
+    margin: 21px 440px 21px 0;
+  }
+
+  .collaboration {
+      width: 900px;
+      height: 85px;
+      margin: 0 auto ;
+}
+
+.collaboration  dt {
+    margin-top: 15px;
+    padding-top: 0;
+}
+
+.collaboration dd {
+    padding-bottom: 0;
+}
+.collaboration_img img {
+  width: 98px;
+  height: 34px;
+}
+
+.itnav-img{
+    width: 140px;
+    height: 51px;
+    object-fit: fill;
+}
+
+/*フッター最下部*/
+
+.contact {
+font-family: '源ノ角ゴシック';
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.14px;
+text-align: center;
+color: #282828;
+margin-top: 66px;
+margin-bottom: 11px;
+}
+
+address a {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+}
+
+.contactform a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+.contactform {
+    width: 230px;
+    height: 39px;
+    margin: 0 auto 31px auto;
+    background-color: #282828;
+}
+
+address{
+
+}
+
+
+.contactform a{
+
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.14px;
+    color: #fefefe;
+    display: block;
+    padding: 8px 0 0 20px;;
+  }
+
+.copyright {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.14px;
+    text-align: center;
+    color: #2f2f2f;
+    padding-bottom: 54px;
+}
